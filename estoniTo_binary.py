@@ -24,5 +24,9 @@ while(i>=0):
         left2[i]='0'
         i=i-1
 
+result="" 
+for i in left2:
+    result=result+i
+print (result)
 
 
