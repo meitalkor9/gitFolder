@@ -8,4 +8,5 @@ for word in words:
 ## ספירת כמות הפעמים שכל מילה בקובץ מופיעה
 for word in words:
     wordsDict[word]=wordsDict[word]+1
-print(wordsDict)
+##רשימה ממוינת לפי הערך
+sortedList=sorted(wordsDict.items(), key=lambda item: item[1], reverse=True)
