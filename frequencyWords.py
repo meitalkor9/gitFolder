@@ -1,6 +1,7 @@
 #קריאת הקובץ והשמה ברשימה
-with open('fileFor_Frequency.txt', 'r') as file:
+with open(r"C:\Users\adamr\Documents\gitFolder\fileFreq.txt", "r", encoding="utf-8") as file:
     words = file.read().split()
+
 #כל מילה בקובץ הופכת למפתח במילון
 wordsDict={}
 for word in words:
@@ -18,8 +19,9 @@ try:
         print(i,"- word",sortedList[i-1][0]," ",sortedList[i-1][1]," times")
         
 except ValueError:
-    print("Error: הפרמטר שהוזן אינו מספר")
+    print("enter num")
     sys.exit(1)
 except IndexError:
-    print("Error: לא קיימים כל כך הרבה מילים בקובץ")
+    print("there are no so much words")
     sys.exit(1)
+#python C:\Users\adamr\Documents\gitFolder\frequencyWords.py 2
