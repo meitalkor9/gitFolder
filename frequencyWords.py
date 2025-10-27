@@ -5,3 +5,7 @@ with open('fileFor_Frequency.txt', 'r') as file:
 wordsDict={}
 for word in words:
     wordsDict[word]=0
+## ספירת כמות הפעמים שכל מילה בקובץ מופיעה
+for word in words:
+    wordsDict[word]=wordsDict[word]+1
+print(wordsDict)
